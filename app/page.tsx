@@ -6,17 +6,7 @@ import { Button } from "@/components/ui/button"
 export default function Home() {
   return (
     <main className="grid-background min-h-screen flex flex-col items-center justify-center px-4 py-8">
-      {/* Header with Telegram Icon */}
-      <div className="w-full max-w-md flex items-center justify-between mb-8">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center">
-            <span className="text-white text-lg">✈️</span>
-          </div>
-        </div>
-        <button className="text-gray-400 hover:text-white transition-colors">
-          <span className="text-2xl">⋮</span>
-        </button>
-      </div>
+      
 
       <div className="w-full max-w-md flex flex-col items-center justify-center space-y-6">
         {/* Logo Circle */}
@@ -42,7 +32,11 @@ export default function Home() {
             size="lg"
             className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2"
           >
-            <span>✈️</span>
+                  <img
+            src="/kisspng-telegram-logo-computer-icons-computer-software-5aec6aafe66cb1.3597888015254432479438.jpg" // Replace with your image path
+            alt="Telegram Icon"
+            className="w-6 h-6" // Adjust size as needed
+          />
             JOIN TELEGRAM CHANNEL
           </Button>
         </a>
@@ -64,7 +58,11 @@ export default function Home() {
             size="lg"
             className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2"
           >
-            <span>✈️</span>
+            <img
+            src="/kisspng-telegram-logo-computer-icons-computer-software-5aec6aafe66cb1.3597888015254432479438.jpg" // Replace with your image path
+            alt="Telegram Icon"
+            className="w-6 h-6" // Adjust size as needed
+          />
             JOIN TELEGRAM CHANNEL
           </Button>
         </a>
@@ -87,6 +85,9 @@ export default function Home() {
           className="w-full h-auto rounded-2xl shadow-2xl shadow-cyan-500/30 object-contain"
         />
       </div>
+      <footer className="text-xs text-gray-400 text-center px-4 mb-4">
+        This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc. As stipulated by law, we can not and do not make any guarantees about your ability to get results or earn any money with my ideas, information, tools or strategies. I just want to help you by giving great content, direction and strategies that worked well for me and my students and that I believe can help you move forward. All of my terms, privacy policies and disclaimers for this program and website can be accessed via the links. I feel transparency is important and I hold ourselves (you & me) to a high standard of integrity. Thanks for stopping by. I hope this training and content brings you a lot of value & results.
+      </footer>
     </main>
   )
 }
